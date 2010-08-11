@@ -1,0 +1,313 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+ <title>/project/dotfiles/users/dann/.vim/dict/html.dict - Lazy People Orgnization - Trac</title><link rel="start" href="/wiki" /><link rel="search" href="/search" /><link rel="help" href="/wiki/TracGuide" /><link rel="stylesheet" href="/chrome/common/css/trac.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/code.css" type="text/css" /><link rel="stylesheet" href="/chrome/common/css/browser.css" type="text/css" /><link rel="icon" href="/chrome/site/favicon.ico" type="image/x-icon" /><link rel="shortcut icon" href="/chrome/site/favicon.ico" type="image/x-icon" /><link rel="up" href="/browser/project/dotfiles/users/dann/.vim/dict?rev=122" title="Parent directory" /><link rel="alternate" href="/export/122/project/dotfiles/users/dann/.vim/dict/html.dict" title="Original Format" type="text/plain" /><style type="text/css">
+
+</style>
+
+<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+<script type="text/javascript" src="/chrome/site/js/lib/jquery-1.2.2.min.js"></script>
+
+<script type="text/javascript" src="/chrome/site/js/javascript-xpath-cmp.js"></script>
+<script type="text/javascript" src="/chrome/site/js/xpath4jquery.js"></script>
+<script type="text/javascript" src="/chrome/site/js/TracUtils.js"></script>
+<script type="text/javascript" src="/chrome/site/js/HatenaStarTrac.js"></script>
+<script type="text/javascript" src="/chrome/site/js/HatenaStarProgressive.js"></script>
+
+<script type="text/javascript" src="/chrome/site/js/escape.js"></script>
+</script>
+
+<style type="text/css">
+
+</style>
+ <script type="text/javascript" src="/chrome/common/js/trac.js"></script>
+</head>
+<body>
+
+
+
+<div id="banner">
+
+<div id="header"><a id="logo" href="http://lazy-people.org/"><img src="/chrome/site/logo.png" width="211" height="71" alt="Lazy People Organization" /></a><hr /></div>
+
+<form id="search" action="/search" method="get">
+ <div>
+  <label for="proj-search">Search:</label>
+  <input type="text" id="proj-search" name="q" size="10" accesskey="f" value="" />
+  <input type="submit" value="Search" />
+  <input type="hidden" name="wiki" value="on" />
+  <input type="hidden" name="changeset" value="on" />
+  <input type="hidden" name="ticket" value="on" />
+ </div>
+</form>
+
+
+
+<div id="metanav" class="nav"><ul><li class="first"><a href="/login">Login</a></li><li><a href="/settings">Settings</a></li><li><a accesskey="6" href="/wiki/TracGuide">Help/Guide</a></li><li class="last"><a href="/about">About Trac</a></li></ul></div>
+</div>
+
+<div id="mainnav" class="nav"><ul><li class="first"><a accesskey="1" href="/wiki">Wiki</a></li><li><a accesskey="2" href="/timeline">Timeline</a></li><li><a accesskey="3" href="/roadmap">Roadmap</a></li><li class="active"><a href="/browser">Browse Source</a></li><li><a href="/report">View Tickets</a></li><li class="last"><a accesskey="4" href="/search">Search</a></li></ul></div>
+<div id="main">
+
+
+
+
+<div id="ctxtnav" class="nav">
+ <ul>
+  <li class="first"><a href="/changeset/122/project/dotfiles/users/dann/.vim/dict/html.dict">
+   Last Change</a></li>
+  <li class="last"><a href="/log/project/dotfiles/users/dann/.vim/dict/html.dict?rev=122">
+   Revision Log</a></li>
+ </ul>
+</div>
+
+
+<div id="searchable">
+<div id="content" class="browser">
+ <h1><a class="first" title="Go to root directory" href="/browser?rev=122">root</a><span class="sep">/</span><a title="View project" href="/browser/project?rev=122">project</a><span class="sep">/</span><a title="View dotfiles" href="/browser/project/dotfiles?rev=122">dotfiles</a><span class="sep">/</span><a title="View users" href="/browser/project/dotfiles/users?rev=122">users</a><span class="sep">/</span><a title="View dann" href="/browser/project/dotfiles/users/dann?rev=122">dann</a><span class="sep">/</span><a title="View .vim" href="/browser/project/dotfiles/users/dann/.vim?rev=122">.vim</a><span class="sep">/</span><a title="View dict" href="/browser/project/dotfiles/users/dann/.vim/dict?rev=122">dict</a><span class="sep">/</span><a title="View html.dict" href="/browser/project/dotfiles/users/dann/.vim/dict/html.dict?rev=122">html.dict</a></h1>
+
+ <div id="jumprev">
+  <form action="" method="get">
+   <div>
+    <label for="rev">View revision:</label>
+    <input type="text" id="rev" name="rev" value="122" size="4" />
+   </div>
+  </form>
+ </div>
+
+ 
+
+ 
+  <table id="info" summary="Revision info"><tr>
+    <th scope="col">
+     Revision <a href="/changeset/122">122</a>, 447 bytes
+     (checked in by dann, 1 year ago)
+    </th></tr><tr>
+    <td class="message"><p>
+initial commit for dotfiles <br />
+</p>
+</td>
+   </tr>
+  </table>
+  <div id="preview"><table class="code"><thead><tr><th class="lineno">Line</th><th class="content">&nbsp;</th></tr></thead><tbody><tr><th id="L1"><a href="#L1">1</a></th>
+<td>form</td>
+</tr><tr><th id="L2"><a href="#L2">2</a></th>
+<td>input</td>
+</tr><tr><th id="L3"><a href="#L3">3</a></th>
+<td>button</td>
+</tr><tr><th id="L4"><a href="#L4">4</a></th>
+<td>textarea</td>
+</tr><tr><th id="L5"><a href="#L5">5</a></th>
+<td>select</td>
+</tr><tr><th id="L6"><a href="#L6">6</a></th>
+<td>option</td>
+</tr><tr><th id="L7"><a href="#L7">7</a></th>
+<td>optgroup</td>
+</tr><tr><th id="L8"><a href="#L8">8</a></th>
+<td>fieldset</td>
+</tr><tr><th id="L9"><a href="#L9">9</a></th>
+<td>legend</td>
+</tr><tr><th id="L10"><a href="#L10">10</a></th>
+<td>label</td>
+</tr><tr><th id="L11"><a href="#L11">11</a></th>
+<td>isindex</td>
+</tr><tr><th id="L12"><a href="#L12">12</a></th>
+<td>table</td>
+</tr><tr><th id="L13"><a href="#L13">13</a></th>
+<td>caption</td>
+</tr><tr><th id="L14"><a href="#L14">14</a></th>
+<td>thead</td>
+</tr><tr><th id="L15"><a href="#L15">15</a></th>
+<td>tbody</td>
+</tr><tr><th id="L16"><a href="#L16">16</a></th>
+<td>tfoot</td>
+</tr><tr><th id="L17"><a href="#L17">17</a></th>
+<td>tr</td>
+</tr><tr><th id="L18"><a href="#L18">18</a></th>
+<td>th</td>
+</tr><tr><th id="L19"><a href="#L19">19</a></th>
+<td>td</td>
+</tr><tr><th id="L20"><a href="#L20">20</a></th>
+<td>col</td>
+</tr><tr><th id="L21"><a href="#L21">21</a></th>
+<td>colgroup</td>
+</tr><tr><th id="L22"><a href="#L22">22</a></th>
+<td>abbr</td>
+</tr><tr><th id="L23"><a href="#L23">23</a></th>
+<td>acronym</td>
+</tr><tr><th id="L24"><a href="#L24">24</a></th>
+<td>q</td>
+</tr><tr><th id="L25"><a href="#L25">25</a></th>
+<td>blockquote</td>
+</tr><tr><th id="L26"><a href="#L26">26</a></th>
+<td>cite</td>
+</tr><tr><th id="L27"><a href="#L27">27</a></th>
+<td>em</td>
+</tr><tr><th id="L28"><a href="#L28">28</a></th>
+<td>strong</td>
+</tr><tr><th id="L29"><a href="#L29">29</a></th>
+<td>code</td>
+</tr><tr><th id="L30"><a href="#L30">30</a></th>
+<td>dfn</td>
+</tr><tr><th id="L31"><a href="#L31">31</a></th>
+<td>kbd</td>
+</tr><tr><th id="L32"><a href="#L32">32</a></th>
+<td>samp</td>
+</tr><tr><th id="L33"><a href="#L33">33</a></th>
+<td>var</td>
+</tr><tr><th id="L34"><a href="#L34">34</a></th>
+<td>del</td>
+</tr><tr><th id="L35"><a href="#L35">35</a></th>
+<td>ins</td>
+</tr><tr><th id="L36"><a href="#L36">36</a></th>
+<td>disabled</td>
+</tr><tr><th id="L37"><a href="#L37">37</a></th>
+<td>readonly</td>
+</tr><tr><th id="L38"><a href="#L38">38</a></th>
+<td>xml:lang</td>
+</tr><tr><th id="L39"><a href="#L39">39</a></th>
+<td>xml:space</td>
+</tr><tr><th id="L40"><a href="#L40">40</a></th>
+<td>xmlns</td>
+</tr><tr><th id="L41"><a href="#L41">41</a></th>
+<td>accesskey</td>
+</tr><tr><th id="L42"><a href="#L42">42</a></th>
+<td>tabindex</td>
+</tr><tr><th id="L43"><a href="#L43">43</a></th>
+<td>onfocus</td>
+</tr><tr><th id="L44"><a href="#L44">44</a></th>
+<td>onblur</td>
+</tr><tr><th id="L45"><a href="#L45">45</a></th>
+<td>onclick</td>
+</tr><tr><th id="L46"><a href="#L46">46</a></th>
+<td>ondblclick</td>
+</tr><tr><th id="L47"><a href="#L47">47</a></th>
+<td>onkeypress</td>
+</tr><tr><th id="L48"><a href="#L48">48</a></th>
+<td>onkeydown</td>
+</tr><tr><th id="L49"><a href="#L49">49</a></th>
+<td>onkeyup</td>
+</tr><tr><th id="L50"><a href="#L50">50</a></th>
+<td>onmousedown</td>
+</tr><tr><th id="L51"><a href="#L51">51</a></th>
+<td>onmouseup</td>
+</tr><tr><th id="L52"><a href="#L52">52</a></th>
+<td>onmousemove</td>
+</tr><tr><th id="L53"><a href="#L53">53</a></th>
+<td>onmouseover</td>
+</tr><tr><th id="L54"><a href="#L54">54</a></th>
+<td>onmouseout</td>
+</tr><tr><th id="L55"><a href="#L55">55</a></th>
+<td>onload</td>
+</tr><tr><th id="L56"><a href="#L56">56</a></th>
+<td>onunload</td>
+</tr><tr><th id="L57"><a href="#L57">57</a></th>
+<td>onselect</td>
+</tr><tr><th id="L58"><a href="#L58">58</a></th>
+<td>onchange</td>
+</tr><tr><th id="L59"><a href="#L59">59</a></th>
+<td>onreset</td>
+</tr><tr><th id="L60"><a href="#L60">60</a></th>
+<td>onsubmit</td>
+</tr><tr><th id="L61"><a href="#L61">61</a></th>
+<td>preserve</td>
+</tr></tbody></table>
+  </div>
+
+ <div id="help">
+  <strong>Note:</strong> See <a href="/wiki/TracBrowser">TracBrowser</a> for help on using the browser.
+ </div>
+
+  <div id="anydiff">
+   <form action="/anydiff" method="get">
+    <div class="buttons">
+     <input type="hidden" name="new_path" value="/project/dotfiles/users/dann/.vim/dict/html.dict" />
+     <input type="hidden" name="old_path" value="/project/dotfiles/users/dann/.vim/dict/html.dict" />
+     <input type="hidden" name="new_rev" value="122" />
+     <input type="hidden" name="old_rev" value="122" />
+     <input type="submit" value="View changes..." title="Prepare an Arbitrary Diff" />
+    </div>
+   </form>
+  </div>
+
+</div>
+</div>
+<script type="text/javascript">searchHighlight()</script>
+<div id="altlinks"><h3>Download in other formats:</h3><ul><li class="first last"><a href="/export/122/project/dotfiles/users/dann/.vim/dict/html.dict">Original Format</a></li></ul></div>
+
+</div>
+
+<div id="footer">
+ <hr />
+ <a id="tracpowered" href="http://trac.edgewall.org/"><img src="/chrome/common/trac_logo_mini.png" height="30" width="107"
+   alt="Trac Powered"/></a>
+ <p class="left">
+  Powered by <a href="/about"><strong>Trac 0.10.5</strong></a><br />
+  By <a href="http://www.edgewall.org/">Edgewall Software</a>.
+ </p>
+ <p class="right">
+  Visit the Trac open source project at<br /><a href="http://trac.edgewall.org/">http://trac.edgewall.org/</a>
+ </p>
+</div>
+
+
+
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-3558226-1");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+<script type="text/javascript">
+//<![CDATA[
+function thanks(feeds) {
+    var strings = feeds.strings;
+    var list = '';
+    for (var i = 0; i < strings.length; i++) {
+        list += '<li><span style="color: #999999">'
+              + escapeHTML(strings[i]['register_date'])
+              + ':</span> '
+              + escapeHTML(strings[i]['string'])
+              + '</li>';
+    }
+    if ( document.getElementById('thanks_list') ) {
+        document.getElementById('thanks_list').innerHTML = list;
+    }
+}
+
+function osc2008spring(feeds) {
+    if ( document.getElementById('osc_list') ) {
+        var items = feeds.value.items;
+        document.getElementById('osc_list').innerHTML = feed2list(items);
+    }
+}
+
+function feed2list (items) {
+    var list = '';
+    for (var i = 0; i < items.length; i++) {
+        list += '<li>'
+              + '<a href="' + items[i]['link'] + '">' + items[i]['title'] + '</a>'
+              + ' <a href="http://b.hatena.ne.jp/entry/' + items[i]['link'] + '">'
+            + '<img src="http://d.hatena.ne.jp/images/b_entry.gif" title="このエントリーを含むブックマーク" alt="このエントリーを含むブックマーク" />'
+              + '<img src="http://b.hatena.ne.jp/entry/image/' + items[i]['link'] + '"></a>'
+              + ' <a href="http://clip.livedoor.com/page/' + items[i]['link'] + '">'
+              + '<img src="http://parts.blog.livedoor.jp/img/cmn/clip_16_16_w.gif" alt="この記事をクリップ！" style="border: none;vertical-align: middle;" />'
+      + '<img src="http://image.clip.livedoor.com/counter/' + items[i]['link'] + '"></a>'
+              + '</li>';
+    }
+    return list;
+}
+//]]>
+</script>
+<script src="http://mojuice.lazy-people.org/api/rest/string/?rows=10&created_by=tomyhero-vox-com&format=JSONP&callback=thanks"></script>
+
+
+ </body>
+</html>
+

@@ -1,0 +1,146 @@
+#!/usr/bin/ruby
+require 'rubygems'
+require 'term/ansicolor'
+require 'net/http'
+require 'iconv'
+require 'uri'
+require 'open-uri'
+require 'active_record' 
+@@HOME = `echo $HOME`.strip
+
+ActiveRecord::Base.establish_connection(
+  :adapter => "sqlite3",  
+  :database  => "#{@@HOME}/.vim/Apps/longman.dic"
+)
+
+class Phones < ActiveRecord::Base
+end
+
+class Entry < ActiveRecord::Base
+end
+
+def pdict( shift )
+  ret = Phones.find(:first,:conditions => "word='#{shift}'")
+  if ret!=nil
+    print "Phonetic symbol:" , ret.mean , "\n"
+  end
+  return shift
+end
+
+def ydict (shift)
+  raise ArgumentError, 'Must specify word' if shift == nil
+  include Term::ANSIColor
+  Net::HTTP.start('tw.dictionary.yahoo.com', 80) {|http|
+    response = http.get('/search?p=' + shift)
+    @html = response.body
+  }
+  if ENV['LC_CTYPE'] =~ /Big5/
+    @html = Iconv.new('big5', 'utf-8').iconv(@html)
+  end
+  i = 0
+  html = @html.gsub /\r/, ""
+  html = html.gsub /\n/, ""
+  if html =~ /<em class="warning">/
+    if html =~ /<em class="warning">.*?>(\S+)<.*?<\/em>/
+      q = $1;
+      print bold , yellow , "\nERROR: ", shift , " -> " , q , "\n",  reset
+      return ydict(q)
+    else
+      print bold , yellow , "ERROR: ", shift , "\n",  reset
+      return
+    end
+  end
+  print bold , yellow , "\n" + shift + "\n" , reset
+  while html =~ /<div class=p(\w+)>(.*?)<\/div>/i
+    type = $1
+    line = $2
+    html = $'
+    $reset = reset
+    line = line.gsub /^\s+/, ""
+    line = line.gsub /\s+$/, ""
+    if type == 'cixin'
+      i = 0
+      $color = bold, red
+    elsif type == 'chi' or type == 'eng'
+      $color = cyan;
+      $reset = reset  + $color
+      line = "\t" + line
+    elsif type == 'explain'
+      i = i + 1
+      line = i.to_s + " " + line
+    else 
+      color = bold, blue
+      next
+    end
+    line = line.gsub /<b>/, bold
+    line = line.gsub /<\/b>/, $reset
+    line = line.gsub /<[^>]+>/, $reset
+    print $color , line + "\n" , reset
+  end
+  puts ""
+end
+
+@@base="http://dict.cnki.net/dict_result.aspx?tjType=all&searchword="
+def treatisedict(word)
+  conv=Iconv.conv("UTF-8","GB2312",word)
+  uri=@@base+conv
+  uri=URI::escape(uri)
+  begin
+    str=''
+    open(uri) do |f|
+      str = f.read
+    end
+  rescue
+    puts $!
+  end
+  pattern=/<font class=\"text6\">(.+?)<\/font>/
+    result = str.scan pattern
+  ret = ""
+  for i in 0..result.length-2
+    mean = result[i][0].gsub(/<a href=.+?>/,'').gsub(/<\/a>/,'')
+    ret += mean
+    ret += "\n"
+  end
+  return ret
+end
+
+def tdict (shift)
+  include Term::ANSIColor
+  mean = treatisedict(shift)
+  print bold,cyan,mean,"\n",reset
+end
+
+def ldict( shift ) 
+  include Term::ANSIColor
+  print bold , yellow , "\n" + shift + "\n" , reset
+  ret = Entry.find(:first,:conditions => "word='#{shift}'"); 
+  if ret == nil
+    print bold , yellow , "ERROR: ", shift , "\n",  reset
+    return
+  end
+  explain = ret.mean
+  $color = cyan;
+  $reset = reset  + $color
+  content = String.new
+  if explain != nil
+    line = explain.gsub( /\/\//,"  " ).gsub( /\\n/,"\n" ).gsub( /(-)/," " ).gsub( /(\s\s\s+)/,"\t\n" ) 
+    content += line
+    line = line.gsub( /(#{shift.downcase})/,'<b>\0</b>').gsub( /(^\s+\d .+?:)/,'<r>\0</r>')
+    line = line.gsub /<r>/, red
+    line = line.gsub /<\/r>/, $reset
+    line = line.gsub /<b>/, bold
+    line = line.gsub /<\/b>/, $reset
+    print $color , line , "\n" , reset
+  end
+  return content
+end
+
+puts "----------------------------------------------"
+pdict(ARGV[0])
+puts "----------------------------------------------"
+tdict(ARGV[0])
+puts "----------------------------------------------"
+ldict(ARGV[0])
+puts "----------------------------------------------"
+ydict(ARGV[0])
+
